@@ -1,0 +1,141 @@
+/* The whole page is styled */
+body {
+    background-image: url('../image/back.gif');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    position: relative;
+
+    /*body ko realative ma footer absolute rakna lai yesma realtive lekeko , tme la yo nai garnu parxa bhane ni xaina css web lai different way ley milxa */
+}
+
+/* the menu bar is styled */
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+/*logo is styled*/
+.logo {
+    width: 150px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+/*navigation bar is style */
+nav {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    background: rgba(0, 0, 0, 0.5)
+    width: 100%;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+    color: #fff;
+    font-size: 22px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+/* text is stylaized */
+.text {
+    color: black;
+    padding: 20px 8%;
+    font-size: medium;
+    font-weight: 100;
+}
+
+/*nav bar is made sticky and more resposive */
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 8%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 1s;
+}
+
+nav.sticky ul {
+    width: auto;
+}
+
+/* background: rgba(0, 0, 0, 0.5); yo kun ma style dina khojeko tmela ? kna ? */
+/* It is a random color number just ignore it */
+
+
+/* Footer is styled */
+footer {
+    position: absolute;
+    /*  position realtive absolute fixed hunxa tyo css herw yekxoti majale  */
+    /* bottom: 0;
+    left: 0; */
+
+    background-color: #272727;
+    height: auto;
+    width: 100vw;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: ; kahila pani style dida ke comment ma haldeu complete bhaisakeko xaina bhane natrw background color didai garda nadi narakha error dekauxa */
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-weight: 14px;
+}
+
+/* The social media icons are styled */
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #000
+}
